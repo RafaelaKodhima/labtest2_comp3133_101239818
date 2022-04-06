@@ -1,0 +1,29 @@
+
+<app-missionlist></app-missionlist>
+
+<ul>
+    <div *ngFor="let item of data">
+      <div style="background-color: #92b7dd;">
+        {{item.mission_name}}<br>
+        {{item.launch_year}}<br>
+        {{item.details}}<br>
+        <img src="{{item.mission_patch_small}}" alt="">
+        <!-- <button (click)="goToPage()">Details</button> -->
+        
+      </div><br>
+    </div>
+</ul>
+
+  <!-- Footer -->
+  
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
